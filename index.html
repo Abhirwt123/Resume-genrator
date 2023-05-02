@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Genrator</title>
+    <script
+      src="https://kit.fontawesome.com/60af95cb2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="resume-data-card">
+      <div class="container">
+        <h1>Resume Genrator</h1>
+        <div class="details-card">
+          <div class="left-info-box">
+            <p class="bold-text">Personal information</p>
+            <div class="user-name input-box">
+              <lable for="name">Your Name</lable>
+              <input type="text" id="Name" placeholder="Enter Your Name" />
+            </div>
+            <div class="user-phone input-box">
+              <lable for="phone">Your Phone</lable>
+              <input type="phone" id="phone" placeholder="Enter Your phone" />
+            </div>
+            <div class="user-address input-box">
+              <lable for="address">Your Address</lable>
+              <textarea
+                id="address"
+                rows="5"
+                placeholder="Your current Address"
+              ></textarea>
+            </div>
+            <div class="social-media input-box">
+              <p class="social-media-links bold-text">Social Media Links</p>
+              <div class="fb input-box">
+                <lable for="facebook">Facebook</lable>
+                <input
+                  type="text"
+                  id="facebook"
+                  placeholder="Enter Your facebook link"
+                />
+              </div>
+              <div class="insta input-box">
+                <lable for="instagram">Instagram</lable>
+                <input
+                  type="text"
+                  id="instagram"
+                  placeholder="Enter Your instagram link"
+                />
+              </div>
+              <div class="linkedin input-box">
+                <lable for="linkedin">LinkedIn</lable>
+                <input
+                  type="text"
+                  id="linkedin"
+                  placeholder="Enter Your linkedin link"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="right-info-box">
+            <p class="bold-text">Professional information</p>
+            <div class="user-objectiv input-box">
+              <lable for="objective">Objective</lable>
+              <textarea id="objective" rows="3" placeholder="Entre here">
+              </textarea>
+            </div>
+            <div class="user-experience input-box" id="exp">
+              <lable for="experience">Your Experience</lable>
+              <textarea
+                id="experience"
+                class="t-area"
+                rows="2"
+                placeholder="Entre here"
+              ></textarea>
+            </div>
+            <div class="user-qualification input-box" id="qualf">
+              <lable for="qualification">Your Qualification</lable>
+              <textarea
+                id="qualification"
+                rows="2"
+                class="qul-field"
+                placeholder="Entre here"
+              ></textarea>
+            </div>
+            <div class="button exBtn" id="d">
+              <button class="btn" onclick="addField()">Add</button>
+            </div>
+            <div class="skills-box">
+              <label for="tags" id="skill-title">Your Skills</label>
+              <p class="guide">Press enter to add your skill....</p>
+              <input type="text" name="" id="tags" />
+              <div class="tag-item"></div>
+            </div>
+            <div class="gr-button">
+              <button class="btn gr" onclick="genrateCV()">
+                Genrator Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="template-data-card">
+      <div class="container">
+        <div class="resume-template-card">
+          <div class="info-box-left">
+            <div class="profile">
+              <img src="../assect/images/60111.jpg" alt="" />
+            </div>
+            <div class="objective-info">
+              <p class="obj-title heading-bold heading-bgcolor">Objective</p>
+              <p class="obj-details" id="t-obj"></p>
+            </div>
+            <div class="contact-info">
+              <p class="number">
+                Contact Number:<span class="user-number" id="t-contact"></span>
+              </p>
+            </div>
+            <div class="social-media-link-info">
+              <p class="links-title heading-bold heading-bgcolor">
+                Social Media Links
+              </p>
+              <p class="links">
+                Facebook:<a href="" id="t-fb">Check my account</a>
+              </p>
+              <p class="links">
+                Instagram:<a href="" id="t-insta">Check my account</a>
+              </p>
+              <p class="links">
+                Linkedin:<a href="" id="t-linkedin">Check my account</a>
+              </p>
+            </div>
+          </div>
+          <div class="info-box-right">
+            <div class="resume-holder-name" id="t-name"></div>
+            <div class="work-exp holder-info-box">
+              <p class="work-exp-title heading-bold heading-bgcolor">
+                Work Experience
+              </p>
+              <div id="t-w-exp"></div>
+            </div>
+            <div class="education-info holder-info-box">
+              <p class="edu-title heading-bold heading-bgcolor">Education</p>
+              <ul id="t-edu"></ul>
+            </div>
+            <div class="skills-info holder-info-box">
+              <p class="skills-title heading-bold heading-bgcolor">My skills</p>
+              <ul id="t-skills"></ul>
+            </div>
+
+            <button class="btn" id="print-cv" onclick="window.print()">
+              Print
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- javascript script heare -->
+    <script src="./main.js"></script>
+  </body>
+</html>
