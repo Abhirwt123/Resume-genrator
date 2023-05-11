@@ -40,6 +40,8 @@ function genrateCV() {
     string = string + `<li>${skillsVal[i].innerText}</li>`;
   }
 
+  const address =document.getElementById("address").value;
+
   // set the value in resume template
 
   let tempName = (document.getElementById("t-name").innerHTML = nameVal);
@@ -59,6 +61,8 @@ function genrateCV() {
   let tempskills = (document.getElementById("t-skills").innerHTML = skillsVal);
   document.getElementById("t-skills").innerHTML = string;
   let tempworkExp = (document.getElementById("t-w-exp").innerHTML = workExpVal);
+
+  let tempAddressValue =document.querySelector(".address-data").innerHTML=address;
 }
 
 // function for add skills

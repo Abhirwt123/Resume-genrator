@@ -114,15 +114,20 @@ textarea {
 .info-box-right {
   flex-basis: 75%;
 }
-.info-box-left .profile {
-  width: 150px;
-  margin: auto;
-  padding-top: 3rem;
-  margin-bottom: 4rem;
+.info-box-left .Address-value {
+margin: 1rem 0;
 }
-.info-box-left .profile img {
-  width: 100%;
-  border-radius: 8rem;
+.address-title {
+  padding: 1.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+.info-box-left .Address-value .address-data {
+ text-align: left;
+ font-size: 1.4rem;
+ margin: 1rem 0;
 }
 .heading-bold {
   background-color: #6ec4c0;
