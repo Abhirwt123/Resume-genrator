@@ -5,7 +5,6 @@ function addField() {
   newNode.classList.add("qul-field");
   newNode.setAttribute("rows", 2);
   newNode.setAttribute("placeholder", "Entre here");
-
   let uExperience = document.querySelector(".user-qualification");
   uExperience.appendChild(newNode);
 }

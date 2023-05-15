@@ -9,6 +9,9 @@
 html {
   font-size: 62.5%;
 }
+body{
+  background-color:#cbd28f ;
+}
 /* global css */
 .container {
   max-width: 112rem;
@@ -61,9 +64,6 @@ h1 {
 }
 
 /* card details section start */
-.resume-data-card {
-  background-color: #cbd28f;
-}
 .details-card {
   margin-top: 2rem;
   display: flex;
@@ -115,19 +115,18 @@ textarea {
   flex-basis: 75%;
 }
 .info-box-left .Address-value {
-margin: 1rem 0;
+  margin: 1rem 0;
 }
 .address-title {
   padding: 1.2rem;
   color: white;
   font-weight: bold;
   font-size: 2rem;
-
 }
 .info-box-left .Address-value .address-data {
- text-align: left;
- font-size: 1.4rem;
- margin: 1rem 0;
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 .heading-bold {
   background-color: #6ec4c0;
@@ -227,4 +226,22 @@ i {
 .guide {
   color: grey;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html{
+    font-size: 45%;
+  }
+ .resume-data-card .details-card{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding:0 4rem;
+ }
+ .left-info-box,.right-info-box{
+  width: 100%;
+ }
+ .template-data-card{
+  padding: 0 4rem;
+ }
 }
